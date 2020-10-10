@@ -1,6 +1,6 @@
 {
   "name": "string-to-react-element",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "scripts": {
