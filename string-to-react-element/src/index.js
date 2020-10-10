@@ -1,17 +1,41 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {
+  emojiRegex,
+  urlRegex,
+  mentionRegex,
+  hashtagRegex,
+  whiteSpaceRegex,
+  symbolRegex,
+} from './Regex';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const ParseReactElement = function (text, Renderer) {
+  const regex = new RegExp(`${urlRegex.source}|${mentionRegex.source}|${hashtagRegex.source}|${whiteSpaceRegex.source}|${symbolRegex.source}|${emojiRegex.source}`, 'gui');
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  const splitedText = text.split(regex).filter(item => item !== undefined);
+  const newText = splitedText.map((splitItem) => {
+    if (urlRegex.test(splitItem)) {
+      return Renderer.find(item => item.type === 'url').component(splitItem);
+    }
+    if (mentionRegex.test(splitItem)) {
+      return Renderer.find(item => item.type === 'mention').component(splitItem);
+    }
+    if (hashtagRegex.test(splitItem)) {
+      return Renderer.find(item => item.type === 'hashtag').component(splitItem);
+    }
+    if (emojiRegex.test(splitItem)) {
+      return Renderer.find(item => item.type === 'emoji').component(splitItem);
+    }
+    if (whiteSpaceRegex.test(splitItem)) {
+      return Renderer.find(item => item.type === 'whitespace').component(splitItem);
+    }
+    return (
+      <>
+        {splitItem}
+      </>
+    );
+  });
+
+  return newText;
+}
+
+export default ParseReactElement;
