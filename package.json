@@ -14,8 +14,8 @@
     "type": "git",
     "url": "git+https://github.com/zamin4life/string-to-react-element.git"
   },
-  "author": "nastaranashouri77@gmail.com",
-  "license": "ISC",
+  "author": "Zamin <info@zamin.link>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zamin4life/string-to-react-element/issues"
   },
