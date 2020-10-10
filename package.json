@@ -1,5 +1,5 @@
 {
-  "name": "string-to-react-element",
+  "name": "string-to-jsx-element",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
