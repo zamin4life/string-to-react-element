@@ -1,8 +1,8 @@
 {
   "name": "string-to-jsx-element",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "dependencies": {
     "user": "^0.0.0"
   },

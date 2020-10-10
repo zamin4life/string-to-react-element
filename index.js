@@ -30,9 +30,7 @@ exports.parseReactElement = function (text, Renderer) {
       return Renderer.find(item => item.type === 'whitespace').component(splitItem);
     }
     return (
-      <>
         {splitItem}
-      </>
     );
   });
 
