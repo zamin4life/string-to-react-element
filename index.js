@@ -29,11 +29,7 @@ export default function parseReactElement(text, Renderer) {
     if (whiteSpaceRegex.test(splitItem)) {
       return Renderer.find(item => item.type === 'whitespace').component(splitItem);
     }
-    return (
-      <>
-        {splitItem}
-      </>
-    );
+    return splitItem
   });
   return newText.filter(item => item.splitItem !== '');
 }
