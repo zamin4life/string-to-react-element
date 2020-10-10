@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
   emojiRegex,
   urlRegex,
@@ -9,7 +7,7 @@ import {
   symbolRegex,
 } from './Regex';
 
-exports.parseReactElement = function (text, Renderer) {
+const ParseReactElement = function (text, Renderer) {
   const regex = new RegExp(`${urlRegex.source}|${mentionRegex.source}|${hashtagRegex.source}|${whiteSpaceRegex.source}|${symbolRegex.source}|${emojiRegex.source}`, 'gui');
 
   const splitedText = text.split(regex).filter(item => item !== undefined);
@@ -36,3 +34,5 @@ exports.parseReactElement = function (text, Renderer) {
 
   return newText;
 }
+
+export default ParseReactElement;
