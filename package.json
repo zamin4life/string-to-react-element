@@ -1,6 +1,6 @@
 {
   "name": "string-to-react-element",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -30,5 +30,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamin4life/string-to-react-element.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Zamin <info@zamin.link>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zamin4life/string-to-react-element/issues"
+  },
+  "homepage": "https://github.com/zamin4life/string-to-react-element#readme"
 }
