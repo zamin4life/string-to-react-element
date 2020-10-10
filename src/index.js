@@ -34,8 +34,7 @@ const ParseReactElement = function (text, Renderer) {
       </>
     );
   });
-
-  return newText;
+  return newText.filter(item => item.splitItem !== '');
 }
 
 export default ParseReactElement;
