@@ -1,6 +1,6 @@
 {
-  "name": "string-to-jsx-element",
-  "version": "1.0.1",
+  "name": "string-to-react-element",
+  "version": "1.0.0",
   "description": "",
   "main": "./lib/index.js",
   "dependencies": {
