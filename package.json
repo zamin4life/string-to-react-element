@@ -1,6 +1,6 @@
 {
   "name": "string-to-react-element",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "A string parser that replace a special regex in string with a renderer",
   "main": "./lib/index.js",
   "scripts": {
