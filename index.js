@@ -1,4 +1,3 @@
-
 export default function stringToReactElement(text, regexAndRendererPairs) {
   const regex = new RegExp(regexAndRendererPairs.map(item => item.regex.source).join('|'), 'gui');
   const splitedText = text.split(regex).filter(item => item !== undefined);
