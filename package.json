@@ -1,10 +1,13 @@
 {
   "name": "string-to-react-element",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "A string parser that replace a special regex in string with a renderer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf lib",
+    "lint": "eslint src",
+    "build": "cross-env BABEL_ENV=production babel src --out-dir lib",
+    "prepublish": "npm run clean && npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
