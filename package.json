@@ -2,12 +2,13 @@
   "name": "string-to-react-element",
   "version": "0.0.12",
   "description": "A string parser that replace a special regex in string with a renderer",
-  "main": "./lib/index.js",
+  "main": "./build/index.js",
   "scripts": {
     "clean": "rimraf lib",
     "lint": "eslint src",
     "build": "cross-env BABEL_ENV=production babel src --out-dir lib",
-    "prepublish": "npm run clean && npm run lint && npm run build"
+    "prepublish": "npm run clean && npm run lint && npm run build",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/zamin4life/string-to-react-element#readme",
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^11.1.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-add-module-exports": "^1.0.0",
@@ -35,10 +38,19 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "react": "^16.8.6"
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "jest": "^26.5.3",
+    "jest-transform-stub": "^2.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.14.0"
   },
   "directories": {
     "lib": "lib"
