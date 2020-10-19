@@ -9,7 +9,7 @@
 
 # example
 
-`
+```
 import React from 'react';
 import parser from 'string-to-react-element'
 import {Link} from '@material-ui/core'
@@ -82,4 +82,4 @@ const App =() => {
 }
 
 export default App;
-`
+```
