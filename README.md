@@ -1,7 +1,7 @@
 # string-to-react-element 
 
 # How does it work? 
-### You can pass a text and a an array containing objects that each contains a regex and a renderer function. This module replaces matched words in main text with your renderer function.The result is depended on your regexes .
+ You can pass a text and a an array containing objects that each contains a regex and a renderer function. This module replaces matched words in main text with your renderer function.The result is depended on your regexes .
 
 # installation
 
