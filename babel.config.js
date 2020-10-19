@@ -3,7 +3,6 @@ module.exports = {
     production: {
       plugins: [
         [
-          'transform-react-remove-prop-types',
           {
             mode: 'wrap',
             ignoreFilenames: ['node_modules'],
@@ -17,9 +16,5 @@ module.exports = {
       '@babel/preset-env',
     ],
     '@babel/preset-react',
-  ],
-  plugins: [
-    '@babel/proposal-class-properties',
-    '@babel/plugin-syntax-dynamic-import',
   ],
 };

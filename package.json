@@ -24,8 +24,6 @@
   },
   "homepage": "https://github.com/zamin4life/string-to-react-element#readme",
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.5.0",
-    "@testing-library/react": "^11.1.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-add-module-exports": "^1.0.0",
@@ -42,13 +40,10 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
     "jest": "^26.5.3",
-    "jest-transform-stub": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.14.0"
   },
