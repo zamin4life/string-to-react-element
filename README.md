@@ -1,13 +1,13 @@
 # string-to-react-element 
 
-# How does it work? 
+## How does it work? 
  You can pass a text and a an array containing objects that each contains a regex and a renderer function. This module replaces matched words in main text with your renderer function.The result is depended on your regexes .
 
-# installation
+## installation
 
 npm install --save string-to-react-element
 
-# example
+## example
 
 ```
 import React from 'react';
