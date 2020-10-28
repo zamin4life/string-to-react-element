@@ -4,7 +4,7 @@ export default function stringToReactElement(text, regexAndRendererPairs) {
   const newText = splitedText.map((splitItem) => {
     const matchItem = regexAndRendererPairs
       .find(regexAndRendererPairsItem => regexAndRendererPairsItem.regex.test(splitItem));
-    return matchItem && matchItem.renderer(splitItem);
+    return matchItem ? matchItem.renderer(splitItem) : splitItem;
   });
   return newText;
 }
