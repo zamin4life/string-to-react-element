@@ -1,8 +1,8 @@
 {
   "name": "string-to-react-element",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A string parser that replace a special regex in string with a renderer",
-  "main": "./build/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
     "lint": "eslint src",
