@@ -18,7 +18,6 @@ const urlRegex = /(https?:\/\/[^\s]+)|(http?:\/\/[^\s]+)/;
 const mentionRegex = /(\s)([@][\w_-]+)|((^())[@][\w_-]+)/;
 const hashtagRegex = /(\s)([#][\w_-]+)|((^())[#][\w_-]+)/;
 const whiteSpaceRegex = /(\s)/;
-const symbolRegex = /([a-zA-Z0-9]|[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/])/;
 
 const App =() => {
   const text = '#hello string-to-react-element@zamin4life @zamin4life';
@@ -63,10 +62,6 @@ const App =() => {
             return item;
           })
         ),
-      },
-      {
-        regex: symbolRegex,
-        renderer: splitItem => splitItem,
       },
     ]
     return parser(text, renderer);
